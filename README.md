@@ -3,7 +3,7 @@
 Multivariate time-series data involves multiple interdependent variables evolving over time. Predicting or understanding such data requires models capable of capturing temporal dependencies alongside inter-variable relationships. Long Short-Term Memory (LSTM), a type of recurrent neural network (RNN), excels in this domain due to its ability to manage long-term dependencies, vanishing gradient issues, and sequential patterns.
 
 
-Typical applications include:
+##Typical applications include:
 
 
 Industrial Systems Monitoring: Predict equipment failures using sensor data.
@@ -27,7 +27,7 @@ LSTM Model Architecture for Multivariate Time-Series
 When designing an LSTM-based architecture for multivariate time-series prediction, consider the following:
 
 
-Input Layer:
+##Input Layer:
 
 Shape: The input must be in the format (samples, timesteps, features).
 For example: (batch_size=32, timesteps=10, features=5).
@@ -42,7 +42,7 @@ Use a dense layer with one neuron (for single-step forecasting) or m neurons (fo
 
 Hyperparameter Optimization
 
-Key hyperparameters for multivariate LSTM:
+##Key hyperparameters for multivariate LSTM:
 
 
 Timesteps (n): Test different window sizes to balance trade-offs between short- and long-term dependencies.
@@ -52,7 +52,7 @@ Batch Size: Experiment with sizes ranging from 16 to 256, considering hardware c
 
 Training and Evaluation
 
-Loss Function:
+##Loss Function:
 
 Use Mean Squared Error (MSE) for regression tasks.
 Use Cross-Entropy Loss for classification tasks.
